@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="submodules\GLEW\src\glew.c" />
+    <ClCompile Include="submodules\GLFW\src\cocoa_time.c" />
+    <ClCompile Include="submodules\GLFW\src\context.c" />
+    <ClCompile Include="submodules\GLFW\src\egl_context.c" />
+    <ClCompile Include="submodules\GLFW\src\glx_context.c" />
+    <ClCompile Include="submodules\GLFW\src\init.c" />
+    <ClCompile Include="submodules\GLFW\src\input.c" />
+    <ClCompile Include="submodules\GLFW\src\linux_joystick.c" />
+    <ClCompile Include="submodules\GLFW\src\monitor.c" />
+    <ClCompile Include="submodules\GLFW\src\null_init.c" />
+    <ClCompile Include="submodules\GLFW\src\null_joystick.c" />
+    <ClCompile Include="submodules\GLFW\src\null_monitor.c" />
+    <ClCompile Include="submodules\GLFW\src\null_window.c" />
+    <ClCompile Include="submodules\GLFW\src\osmesa_context.c" />
+    <ClCompile Include="submodules\GLFW\src\platform.c" />
+    <ClCompile Include="submodules\GLFW\src\posix_module.c" />
+    <ClCompile Include="submodules\GLFW\src\posix_poll.c" />
+    <ClCompile Include="submodules\GLFW\src\posix_thread.c" />
+    <ClCompile Include="submodules\GLFW\src\posix_time.c" />
+    <ClCompile Include="submodules\GLFW\src\vulkan.c" />
+    <ClCompile Include="submodules\GLFW\src\wgl_context.c" />
+    <ClCompile Include="submodules\GLFW\src\win32_init.c" />
+    <ClCompile Include="submodules\GLFW\src\win32_joystick.c" />
+    <ClCompile Include="submodules\GLFW\src\win32_module.c" />
+    <ClCompile Include="submodules\GLFW\src\win32_monitor.c" />
+    <ClCompile Include="submodules\GLFW\src\win32_thread.c" />
+    <ClCompile Include="submodules\GLFW\src\win32_time.c" />
+    <ClCompile Include="submodules\GLFW\src\win32_window.c" />
+    <ClCompile Include="submodules\GLFW\src\window.c" />
+    <ClCompile Include="submodules\GLFW\src\wl_init.c" />
+    <ClCompile Include="submodules\GLFW\src\wl_monitor.c" />
+    <ClCompile Include="submodules\GLFW\src\wl_window.c" />
+    <ClCompile Include="submodules\GLFW\src\x11_init.c" />
+    <ClCompile Include="submodules\GLFW\src\x11_monitor.c" />
+    <ClCompile Include="submodules\GLFW\src\x11_window.c" />
+    <ClCompile Include="submodules\GLFW\src\xkb_unicode.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="include" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="submodules\GLFW\src\CMakeLists.txt" />
+    <Content Include="submodules\GLFW\src\cocoa_init.m" />
+    <Content Include="submodules\GLFW\src\cocoa_joystick.m" />
+    <Content Include="submodules\GLFW\src\cocoa_monitor.m" />
+    <Content Include="submodules\GLFW\src\cocoa_window.m" />
+    <Content Include="submodules\GLFW\src\glfw.rc.in" />
+    <Content Include="submodules\GLFW\src\mappings.h.in" />
+    <Content Include="submodules\GLFW\src\nsgl_context.m" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="submodules\GLEW\include\GL\eglew.h" />
+    <ClInclude Include="submodules\GLEW\include\GL\glew.h" />
+    <ClInclude Include="submodules\GLEW\include\GL\glxew.h" />
+    <ClInclude Include="submodules\GLEW\include\GL\wglew.h" />
+    <ClInclude Include="submodules\GLFW\include\GLFW\glfw3.h" />
+    <ClInclude Include="submodules\GLFW\include\GLFW\glfw3native.h" />
+    <ClInclude Include="submodules\GLFW\src\cocoa_joystick.h" />
+    <ClInclude Include="submodules\GLFW\src\cocoa_platform.h" />
+    <ClInclude Include="submodules\GLFW\src\cocoa_time.h" />
+    <ClInclude Include="submodules\GLFW\src\internal.h" />
+    <ClInclude Include="submodules\GLFW\src\linux_joystick.h" />
+    <ClInclude Include="submodules\GLFW\src\mappings.h" />
+    <ClInclude Include="submodules\GLFW\src\null_joystick.h" />
+    <ClInclude Include="submodules\GLFW\src\null_platform.h" />
+    <ClInclude Include="submodules\GLFW\src\platform.h" />
+    <ClInclude Include="submodules\GLFW\src\posix_poll.h" />
+    <ClInclude Include="submodules\GLFW\src\posix_thread.h" />
+    <ClInclude Include="submodules\GLFW\src\posix_time.h" />
+    <ClInclude Include="submodules\GLFW\src\win32_joystick.h" />
+    <ClInclude Include="submodules\GLFW\src\win32_platform.h" />
+    <ClInclude Include="submodules\GLFW\src\win32_thread.h" />
+    <ClInclude Include="submodules\GLFW\src\win32_time.h" />
+    <ClInclude Include="submodules\GLFW\src\wl_platform.h" />
+    <ClInclude Include="submodules\GLFW\src\x11_platform.h" />
+    <ClInclude Include="submodules\GLFW\src\xkb_unicode.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EF5BBB3E-E20B-40D1-8B5B-98ABEC925F01}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VR_Test_Solution</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <SourcePath>$(VC_SourcePath);$(SolutionDir)submodules\OpenVR\src;$(SolutionDir)submodules\GLEW\src;$(SolutionDir)submodules\GLFW\src</SourcePath>
+    <IncludePath>$(VC_IncludePath);$(SolutionDir)submodules\GLFW\include;$(SolutionDir)submodules\GLEW\include;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(CommonExecutablePath);$(SolutionDir)\src</ExecutablePath>
+    <IncludePath>$(VC_IncludePath);$(SolutionDir)submodules\GLFW\include;$(SolutionDir)submodules\GLEW\include;$(SolutionDir)submodules\OpenXR\include;$(SolutionDir)submodules/OpenXR/src/external/jsoncpp/include;$(SolutionDir)submodules/OpenXR/src/external/jnipp;$(SolutionDir)submodules\OpenXR\src\common;$(SolutionDir)submodules\OpenXR\src;</IncludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <SourcePath>$(VC_SourcePath);$(SolutionDir)submodules\OpenVR\src;$(SolutionDir)submodules\GLEW\src;$(SolutionDir)submodules\GLFW\src</SourcePath>
+    <IncludePath>$(VC_IncludePath);$(SolutionDir)submodules\GLFW\include;$(SolutionDir)submodules\GLEW\include;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(CommonExecutablePath);$(SolutionDir)\src</ExecutablePath>
+    <IncludePath>$(VC_IncludePath);$(SolutionDir)submodules\GLFW\include;$(SolutionDir)submodules\GLEW\include;</IncludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;WIN32_LEAN_AND_MEAN;GLEW_STATIC;_CONSOLE;_WINDOWS;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$SolutionDir)submodules\GLEW\bin\Debug\Win32;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";GLEW_STATIC;API_NAME="OpenXR";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=27;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories></AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);opengl32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)submodules\GLEW\bin\Release\Win32;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";GLEW_STATIC;API_NAME="OpenXR";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=27;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)submodules\GLEW\bin\Release\x64;$(SolutionDir)submodules\OpenVR\bin\win64\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);opengl32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
